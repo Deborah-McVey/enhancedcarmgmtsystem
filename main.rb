@@ -4,8 +4,20 @@ class Car
     @model = model
     @color = color
   end
+  
+  def print_make
+    puts @make
+  end
 
-def car_details
+  def print_model
+    puts @model
+  end
+
+  def print_color
+    puts @color
+  end
+
+def info
   puts "Your car is a #{color} #{make} #{model}."
 end
 
@@ -17,4 +29,7 @@ class Garage < Car
     @color = color
   end
 
-car = Car.new
+car = Car.new()
+
+garage = Garage.new()
+  
